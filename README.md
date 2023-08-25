@@ -51,9 +51,12 @@ Ensure connectivity between the CLient and Domain Controller by opening up comma
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="416" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/2dcc9f3e-1fbc-4f85-8123-9adc47dfc449">
+
+<img width="365" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/5258f77c-8690-4426-a3c2-2704ff37afdd">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install Active Directory on the Server Manager by going to Add Roles and Features. When you get to server roles click Active Directory Domain Services and proceed through until installed successfully.
 </p>
 <br />
