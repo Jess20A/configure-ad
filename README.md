@@ -32,11 +32,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <img width="300" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/e691779f-fe8d-4c2a-ace8-82bdb9f962fb">
 
-</p>
+
 <p>
 In Microsoft Azure create a client VM using Windows 10 and a Domain Controller using Windows Server 2022. For the Domain Controller you will need to set the Network Interface Card to static.
 </p> 
-<br />
+
 
 <p>
 <img width="195" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/235ece0c-6a56-4bef-8c9b-30f7cd18eb58">
@@ -59,4 +59,21 @@ Ensure connectivity between the CLient and Domain Controller by opening up comma
 <p>
 Install Active Directory on the Server Manager by going to Add Roles and Features. When you get to server roles click Active Directory Domain Services and proceed through until installed successfully.
 </p>
-<br />
+
+
+<img width="209" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/0fc10cbe-7b12-419a-8dce-bbb1a045b8f8">
+
+<img width="192" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/fedd9fb2-d6c5-4980-a9ca-defc02d845ec">
+
+
+Using Active Directory Users and Computers, create a user account and make that user a member of the Domain Admins security group. You will use this main account as the Domain's Administrator.
+
+
+<img width="385" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/183e23d9-c318-4847-a2bf-fd897f275d63">
+
+<img width="455" alt="image" src="https://github.com/Jess20A/configure-ad/assets/142112890/da9b2526-bcce-417a-aa43-afffa42a1357">
+
+
+To join your Client VM to your Domain Controller, set the Client's DNS setting to the Domain Controllers private IP address. Restart the Client VM and log in with the original local admin account. In the settings go to Rename this PC (Advanced) > Change > Member Of and then type in the domain name. Afterwards you will have to enter the name of the domain and password to be joined.
+
+
